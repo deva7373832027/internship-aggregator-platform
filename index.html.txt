@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InternAlert - Find Internships</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 InternAlert</h1>
+        <p>Get alerts for your dream internship</p>
+        
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search internships...">
+        <button onclick="searchInternships()">Search</button>
+        
+        <!-- Filter Section -->
+        <div class="filters">
+            <select id="location">
+                <option>All Locations</option>
+                <option>Remote</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+                <option>Delhi</option>
+            </select>
+            
+            <select id="field">
+                <option>All Fields</option>
+                <option>Tech</option>
+                <option>Marketing</option>
+                <option>Finance</option>
+                <option>Design</option>
+            </select>
+        </div>
+        
+        <!-- Internship List -->
+        <div id="internship-list">
+            <!-- Jobs will appear here -->
+        </div>
+        
+        <!-- Alert Form -->
+        <div class="alert-form">
+            <h3>Create Alert</h3>
+            <input type="email" id="email" placeholder="Your email">
+            <input type="text" id="keywords" placeholder="Skills (comma separated)">
+            <button onclick="createAlert()">Get Alerts</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
